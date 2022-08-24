@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    background: darkcyan;
+    color:ghostwhite;
+    padding:25px;
+}
+
+.content{
+    display:flex;
+    height: 75vh;
+}
+
+#add-book{
+    height: 100%;
+    background: ghostwhite;
+    padding:25px;
+    font-size: large;
+}
+
+#add-book ul{
+    list-style-type: none;
+    padding:6px;
+    margin-left: 10px;
+}
+
+#add-book li{
+    margin-bottom: 15px;
+    padding:2px;
+}
+
+.library{
+    overflow-y: scroll;
+    display: grid;
+    width:75%;
+    height: 100%;
+    grid-template-columns: repeat(auto-fit,minmax(150px,250px));
+    gap:15px;
+    padding:25px;
+    margin:10px;
+}
+
+.book{
+    height: fit-content;
+    min-width:min-content;
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: 0px 0px 2px darkblue;
+}
+
+.book > p{
+    text-align: center;
+}
+
+.title{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.author{
+    font-style: italic;
+}
+
+button{
+    padding: 5px 10px;
+    margin:8px;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    font-size: large;
+}
+
+button:hover{
+    background: darkcyan;
+    color:antiquewhite;
+}
+
+.remove-book:hover{
+    background:lightcoral;
+    color: antiquewhite;
+}
+
+.read:hover{
+    cursor: pointer;
+    background: orange;
+    color: black;
+}
+
+.not-read:hover{
+    cursor:pointer;
+    background:lightgreen;
+    color: black;
+}

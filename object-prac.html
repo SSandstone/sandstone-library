@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="object-prac2.js" defer></script>
+    <link rel="stylesheet" href="object-prac.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to the library</h1>
+        <h3>Enjoy your stay!</h3>
+    </div>
+
+    <div class="content">
+    <div id="add-book">
+        <div class='addForm' id="addForm">
+            <form action="" method="">
+                <ul><li>
+                    <label for="title">Title of book</label>
+                    <div class="book-input"><input type="text" name="title" id="title" required></div>
+                </li>
+                <li>
+                    <label for="author">Author</label>
+                    <div class="book-input"><input type="text" name="author" id="author" required></div>
+                    
+                </li>
+                <li>
+                    <label for="pages">Number of pages</label>
+                    <div class="book-input"><input type="number" name="pages" id="pages" required></div>
+                </li>
+                <li>
+                    <label for="read">Have you read this book?</label>
+                    <div class="book-input"><input type="checkbox" name="read" id="read" value="Read"></div>
+                </li>
+                <li>
+                    <label for="genre">Genre</label>
+                    <div class="book-input">
+                        <select name="genre" id="genre">
+                            <option value="Mystery">Mystery</option>
+                            <option value="Sci-Fi">Science Fiction</option>
+                            <option value="Comedy">Comedy</option>
+                            <option value="Action-Adventure">Action/Adventure</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Fantasy">Fantasy</option>
+                        </select>
+                    </div>
+                </li>
+                <li><button type="button" id="submitBook">Add Book+</button></li>
+            </ul>
+            </form>
+        </div>
+    </div>
+
+    <div class="library" id="library"></div>
+</div>
+</body>
+</html>
