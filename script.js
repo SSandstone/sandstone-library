@@ -111,7 +111,20 @@ function clear(){
     });
 }
 
+const err=document.createElement('p')
+const errSpot=document.getElementById('addForm');
+
 submitBookBtn.addEventListener('click',()=>{ 
-    addBookToLibrary();
-    clear();
+
+    if(document.getElementById('title').value!==''&& 
+        document.getElementById('author').value!=='')
+        {
+            addBookToLibrary();
+            clear();
+            err.textContent='';
+    } else {
+        err.textContent='';
+        err.textContent='Please fill out title and author to submit';
+        errSpot.appendChild(err);
+    }
 });
